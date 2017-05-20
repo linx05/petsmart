@@ -1,0 +1,20 @@
+#loginCard {
+	margin-top: -150px;
+	width: 325px;
+	z-index: 3;
+}
+
+#loginCard md-card-title {
+	text-align: center;
+}
+
+#loginHeader {
+	height: 250px;
+	min-height: 250px;
+	max-height: 250px;
+}
+
+#loginLogo {
+	width: 80%;
+	margin: 5% 10% -5% 10%;
+}

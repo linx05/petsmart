@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Shipment Report</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="css/shipment.css" type="text/css"/>
+	<link rel="stylesheet" href="css/bulma.css" type="text/css"/>
+</head>
+<body>
+<div class="container is-fluid" style="background-color: white !important;">
+	<div class="page">
+		<div class="columns is-mobile">
+			<div class="column is-one-third">
+				<figure class="image is-brand">
+					<img src="assets/img/logo-full.png" alt="Unidos Transport">
+				</figure>
+			</div>
+			<div class="column is-offset-one-third is-one-third">
+				<figure class="image">
+					<!--<img src="assets/img/name.png" class="is-pulled-right" alt="Client Logo">-->
+				</figure>
+			</div>
+		</div>
+		<div class="box">
+			<div class="columns is-mobile">
+				<div class="column">
+					<div class="columns is-mobile">
+						<div class="columns is-mobile">
+							<div class="column">
+								<h1 class="title"><%= model.user.name %></h1>
+								<% if (typeof model.freight !== 'undefined') { %>
+								<h2 class="subtitle"><%= model.freight.id + ' / ' + model.freight.owner %></h2>
+								<% } %>
+							</div>
+							<!--<div class="column">-->
+							<!--<h2 class="has-text-right title">-->
+							<!--<% if (!model.completed) { %>-->
+							<!--<%= 'Traveling' %>-->
+							<!--<% } %>-->
+							<!--</h2>-->
+							<!--</div>-->
+						</div>
+					</div>
+					<div class="columns is-mobile">
+						<div class="column is-half is-offset-one-quarter">
+							<figure class="image is-2by1"><img src="<%= model.map %>"></figure>
+						</div>
+					</div>
+					<div class="columns is-mobile">
+						<div class="column">
+							<label class="label">From</label>
+							<h2 class="subtitle"><%= model.from.name %></h2>
+						</div>
+						<div class="column">
+							<label class="label">To</label>
+							<h2 class="subtitle"><%= model.to.name %></h2>
+						</div>
+						<div class="column">
+							<label class="label">Date/Time</label>
+							<h2 class="subtitle"><%= model.date %></h2>
+						</div>
+					</div>
+					<div class="columns is-mobile">
+						<% if (typeof model.driver !== 'undefined') { %>
+						<div class="column">
+							<label class="label">Driver's Name</label>
+							<h2 class="subtitle"><%= model.driver %></h2>
+						</div>
+						<% } %>
+						<% if (typeof model.vehicle !== 'undefined') { %>
+						<div class="column">
+							<label class="label">Vehicle ID</label>
+							<h2 class="subtitle"><%= model.vehicle %></h2>
+						</div>
+						<% } %>
+						<% if (typeof model.type !== 'undefined') { %>
+						<div class="column">
+							<label class="label">Type</label>
+							<h2 class="subtitle"><%= model.type %></h2>
+						</div>
+						<% } %>
+						<% if (typeof model.trackingNumber !== 'undefined') { %>
+						<div class="column">
+							<label class="label">Tracking Number</label>
+							<h2 class="subtitle"><%= model.trackingNumber %></h2>
+						</div>
+						<% } %>
+					</div>
+					<div class="columns is-mobile">
+						<div class="column">
+							<label class="label">Traveling time (in days)</label>
+							<h2 class="subtitle"><%= model.travelingTime.days %></h2>
+						</div>
+						<div class="column">
+							<label class="label">Traveling time (in hours:minutes)</label>
+							<h2 class="subtitle"><%= model.travelingTime.hours %></h2>
+						</div>
+						<% if (model.completed === true) { %>
+						<div class="column">
+							<label class="label">Arrival Date/Time</label>
+							<h2 class="subtitle"><%= model.endDate %></h2>
+						</div>
+						<% } %>
+					</div>
+					<div class="columns is-mobile">
+						<div class="column">
+							<div class="content">
+								<label class="label">Tags</label>
+								<% if(typeof model.tag !== 'undefined') { %>
+								<span class="tag is-primary is-medium"><%= model.tag %></span>
+								<% } %>
+								<% model.tags.forEach(tag => { %>
+								<% if(tag !== model.tag) { %>
+								<span class="tag is-medium"><%= tag %></span>
+								<% } %>
+								<% }) %>
+							</div>
+						</div>
+					</div>
+					<% if(typeof model.notes !== 'undefined') { %>
+					<div class="columns is-mobile">
+						<div class="column">
+							<label class="label">Notes</label>
+							<h2 class="subtitle"><%= model.notes %></h2>
+						</div>
+					</div>
+					<% } %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<% model.events.reverse().forEach(event => { %>
+	<div class="box page">
+		<div class="columns is-mobile">
+			<div class="column">
+				<div class="container">
+					<article class="message">
+						<div class="message-header">
+							<p><%= `${event.date} | ${event.type}` %></p>
+						</div>
+						<div class="message-body">
+							<div class="columns is-mobile">
+								<div class="column">
+									<div class="content">
+										<p><strong>Event Date/Time</strong></p>
+										<p><%= event.date %></p>
+									</div>
+								</div>
+							</div>
+							<div class="columns is-mobile">
+								<% if(typeof event.driver !== 'undefined') { %>
+								<div class="column">
+									<div class="content">
+										<p><strong>Driver's name</strong></p>
+										<p><%= event.driver %></p>
+									</div>
+								</div>
+								<% } %>
+								<% if(typeof event.driver !== 'undefined') { %>
+								<div class="column">
+									<div class="content">
+										<p><strong>Vehicle ID</strong></p>
+										<p><%= event.vehicle %></p>
+									</div>
+								</div>
+								<% } %>
+								<div class="column">
+									<div class="content">
+										<p><strong>Main Tag</strong></p>
+										<p><%= event.tag %></p>
+									</div>
+								</div>
+							</div>
+							<div class="columns is-mobile">
+								<% if(typeof event.location.name !== 'undefined' && event.location.name.length > 1) { %>
+								<div class="column">
+									<div class="content">
+										<p><strong>Point Name</strong></p>
+										<p><%= event.location.name %></p>
+									</div>
+								</div>
+								<% } %>
+								<div class="column">
+									<div class="content">
+										<p><strong>Lat.</strong></p>
+										<p><%= event.location.location.lat %></p>
+									</div>
+								</div>
+								<div class="column">
+									<div class="content">
+										<p><strong>Lng.</strong></p>
+										<p><%= event.location.location.lng %></p>
+									</div>
+								</div>
+							</div>
+							<% if(typeof event.notes !== 'undefined') { %>
+							<div class="columns is-mobile">
+								<div class="column">
+									<div class="content">
+										<p><strong>Notes</strong></p>
+										<p><%= event.notes %></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if(event.images.length) { %>
+							<div class="columns is-mobile">
+								<div class="column">
+									<div class="container">
+										<div class="tabs is-medium">
+											<ul>
+												<li class="is-active">Images</li>
+											</ul>
+										</div>
+										<div class="container is-fluid">
+											<div class="columns is-mobile">
+												<% event.images.forEach(image => { %>
+												<div class="column">
+													<figure class="image">
+														<img style="max-height: 200px !important;"
+															 src="<%= image.url %>">
+													</figure>
+												</div>
+												<% }) %>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<% } %>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<% }) %>
+</div>
+</body>
+</html>

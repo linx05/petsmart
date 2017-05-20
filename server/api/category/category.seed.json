@@ -1,0 +1,29 @@
+[
+	{
+		"name": "Bebidas"
+	},
+	{
+		"name": "Carnes"
+	},
+	{
+		"name": "Mariscos"
+	},
+	{
+		"name": "Sodas"
+	},
+	{
+		"name": "Quesos"
+	},
+	{
+		"name": "Salsas"
+	},
+	{
+		"name": "Tortillas"
+	},
+	{
+		"name": "Verduras"
+	},
+	{
+		"name": "Otros"
+	}
+]

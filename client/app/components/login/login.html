@@ -1,0 +1,16 @@
+<md-toolbar  id="loginHeader" class="md-tall">
+</md-toolbar>
+
+<div class="flexbox-parent">
+	<div layout="row" layout-align="center center">
+		<md-card id="loginCard" class="md-whiteframe-8dp">
+			<!--<img id="loginLogo" src="../../../assets/img/logo.png" class="md-card-image">-->
+			<md-card-content>
+				<login-form data="$ctrl.credentials" on-login="$ctrl.login($event);"></login-form>
+				<span ng-if="$ctrl.error" id="loginError" layout="column">
+					<md-button class="md-warn" translate="login.index.error" ng-disabled="true"></md-button>
+				</span>
+			</md-card-content>
+		</md-card>
+	</div>
+</div>

@@ -1,0 +1,525 @@
+{
+	"global": {
+		"menu": {
+			"menus": "Menús",
+			"logout": "Cerrar sesión",
+			"home": "Home",
+			"accounts": "Cuentas",
+			"settings": "Configuración",
+			"drivers": "Operadores",
+			"products": "Productos",
+			"movements": "Movimientos de Inventario",
+			"entry": "Entradas a Almacen",
+			"output": "Salidas a Sucursal",
+			"sales": "Ventas"
+		},
+		"action": {
+			"add": "Agregar",
+			"cancel": "Cancelar",
+			"details": "Detalles",
+			"edit": "Editar",
+			"save": "Guardar",
+			"search": "Buscar",
+			"send": "Enviar",
+			"remove": "Eliminar",
+			"upload": {
+				"started": "Subiendo...",
+				"finished": "Archivo Almacenado!"
+			},
+			"back": "Regresar",
+			"saveAndNew": "Guardar y nuevo",
+			"copy": "Copiar",
+			"update": "Actualizar"
+		},
+		"state": {
+			"traveling": "Viajando"
+		},
+		"error": {
+			"arrived": "El envío ya ha llegado",
+			"departed": "El envío ya está en camino",
+			"unique": "${field}: debe ser único, ya se encuentra en uso",
+			"required": "${field}: es requerido",
+			"unauthorized": "No autorizado",
+			"unknown": "Algo salió mal"
+		},
+		"info": {
+			"attachments": "Archivos adjuntos / Imágenes",
+			"seconds": "S"
+		}
+	},
+	"login": {
+		"index": {
+			"title": "Gas",
+			"error": "El correo o la contraseña son incorrectos"
+		},
+		"form": {
+			"login": "Iniciar sesión",
+			"name": "Correo / Usuario",
+			"password": "Contraseña",
+			"reset": "¿Olvidó su contraseña?",
+			"back": "Regresar"
+		}
+	},
+	"reset": {
+		"index": {
+			"title": "Unidos Transport",
+			"error": "El correo es incorrecto",
+			"correct": "Correo enviado",
+			"resetcorrect": "Contraseña cambiada",
+			"errortoken": "Su token expiro, favor de solicitar otro.",
+			"errorpass": "Contraseñas diferentes"
+		},
+		"form": {
+			"name": "Correo",
+			"restore": "Recuperar contraseña",
+			"newpasword": "Contraseña"
+		}
+	},
+	"account": {
+		"index": {
+			"title": "Cuentas",
+			"description": "Módulo de usuarios",
+			"add": "Agregar",
+			"adminPlural": "Administradores del sistema",
+			"employeePlural": "Empleados",
+			"clientTrackerPlural": "Empleados del Cliente",
+			"userPlural": "Administradores cliente",
+			"edit": "Editar",
+			"delete": "Eliminar"
+		},
+		"form": {
+			"name": "Nombre",
+			"email": "Correo",
+			"level": "Nivel",
+			"active": "Activo",
+			"admin": "Administrador del sistema",
+			"employee": "Empleado",
+			"user": "Administrador cliente",
+			"clientTracker": "Empleado del Cliente",
+			"phone": "Teléfono",
+			"rfc": "RFC",
+			"password": "Contraseña",
+			"language": "Idioma",
+			"english": "Inglés",
+			"spanish": "Español",
+			"emailNotifications": "Notificaciones por correo",
+			"company": "Compañía"
+		},
+		"edit": {
+			"title": "Cuenta",
+			"error": "Algo salió mal"
+		}
+	},
+	"client": {
+		"index": {
+			"title": "Clientes",
+			"description": "Módulo de clientes",
+			"add": "Agregar",
+			"edit": "Editar",
+			"delete": "Eliminar"
+		},
+		"form": {
+			"administrator": "Cuenta Administrativa para el Cliente",
+			"name": "Nombre",
+			"email": "Correo",
+			"level": "Nivel",
+			"active": "Activo",
+			"admin": "Administrador",
+			"employee": "Encargado de rastreo",
+			"user": "Cliente",
+			"phone": "Teléfono",
+			"rfc": "RFC",
+			"password": "Contraseña",
+			"language": "Idioma",
+			"english": "Inglés",
+			"spanish": "Español",
+			"emailNotifications": "Notificaciones por correo",
+			"subclients": "Subclientes"
+		},
+		"edit": {
+			"title": "Cliente",
+			"error": "Algo salió mal"
+		}
+	},
+	"freight": {
+		"index": {
+			"title": "Cajas",
+			"description": "Módulo de Cajas",
+			"add": "Agregar",
+			"availablePlural": "Disponibles",
+			"travelingPlural": "En flete",
+			"unavailablePlural": "No disponibles",
+			"garagePlural": "En taller",
+			"edit": "Editar",
+			"delete": "Eliminar"
+		},
+		"form": {
+			"id": "Número de caja",
+			"owner": "Dueño",
+			"stage": "Estado",
+			"active": "Activo",
+			"inactive": "Inactivo",
+			"available": "Disponible",
+			"traveling": "En flete",
+			"unavailable": "No disponible",
+			"garage": "En taller"
+		},
+		"edit": {
+			"title": "Cajas",
+			"error": "Algo salió mal"
+		},
+		"item": {
+			"inactive": "Inactivo",
+			"available": "Disponible",
+			"traveling": "En flete",
+			"unavailable": "No disponible",
+			"garage": "En taller"
+		}
+	},
+	"movement": {
+		"index": {
+			"title": "Movimientos de Inventario",
+			"description": "Módulo de Movimientos",
+			"add": "Agregar",
+			"addProduct": "Agregar Producto",
+			"accept": "Aceptar Movimiento",
+			"cancel": "Cancelar Movimiento",
+			"reject": "Rechazar Movimiento",
+			"reopen": "Reabrir Movimiento",
+			"edit": "Editar",
+			"delete": "Eliminar"
+		},
+		"type": "Tipo",
+		"form": {
+			"types": {
+				"entry": "Entrada de Almacen",
+				"output": "Transferencia de Inventario a Sucursal",
+				"correction": {
+					"correction": "Corrección",
+					"entry": "Corección de Entrada",
+					"output": ""
+				}
+			},
+			"states": {
+				"pending": "Pendiente",
+				"rejected": "Rechazado",
+				"canceled": "Cancelado",
+				"accepted": "Aceptado"
+			},
+			"correction_type": "Corrección de",
+			"view": "Ver",
+			"state": "Estado Actual",
+			"type": "Tipo de Movimiento",
+			"name": "Nombre de Producto",
+			"code": "Codigo de Movimiento",
+			"date": "Fecha de Movimiento",
+			"unit": "Unidad",
+			"price": "Precio",
+			"priceUnit": "Precio / {{unit}}",
+			"initialInventory": "Inventario Inicial",
+			"inventory": "Cantidad en Inventario",
+			"available": "Cantidad Disponible a Seleccionar",
+			"branch": "Sucursal",
+			"branch_transfer": "Sucursal a Transferir",
+			"movement": "Movimiento",
+			"original": "Cantidad Original"
+		},
+		"edit": {
+			"title": "Movimiento de Inventario",
+			"error": "Algo salió mal"
+		},
+		"error": {
+			"overInventory": "Has seleccionado mas de lo que hay en inventario."
+		},
+		"code": {
+			"title": "Abrir Movimiento de Inventario",
+			"error": "Algo salió mal",
+			"code": "Código del Movimiento de Inventario"
+		}
+	},
+	"shipment": {
+		"index": {
+			"title": "Envíos",
+			"description": "Módulo de envíos",
+			"add": "Agregar",
+			"traveling": "Viajando",
+			"completed": "Completados",
+			"notFound": "Sin resultados",
+			"noShipments": "Sin Envios",
+			"viewMode": "Modo de vista",
+			"gridView": "Vista en cuadrícula",
+			"tableView": "Vista en tabla",
+			"todayShipments": "Envios Completados Hoy"
+		},
+		"form": {
+			"user": "Cliente",
+			"freightBox": "Caja",
+			"from": "Punto de partida",
+			"date": "Fecha",
+			"to": "Destino",
+			"tags": "Sellos",
+			"mainTag": "Sello puesto",
+			"notes": "Notas",
+			"driver": "Nombre del operador",
+			"vehicle": "Número del tráiler",
+			"time": "Hora",
+			"type": "Tipo",
+			"trackingNumber": "Números de guía",
+			"import": "Importación",
+			"export": "Exportación",
+			"freightBoxInUseMessage": "La caja seleccionada está asociada a otro envío",
+			"subscribers": "Subscriptores",
+			"drivers": "Operadores",
+			"vehicles": "Tráilers",
+			"freightBoxes": "Cajas",
+			"subclient": "Subcliente",
+			"data": "Datos",
+			"transport": "Transporte",
+			"documents": "Documentos",
+			"lastUpdate": "Última actualización",
+			"noTag": "Sin sello",
+			"status": "Status",
+			"departureDate": "Fecha de salida",
+			"departureTime": "Hora de salida",
+			"national": "Nacional",
+			"interchange_units": "Unidades de Cruze",
+			"ltl": "LTL"
+		},
+		"edit": {
+			"title": "Envío",
+			"titleAlt": "Copiar envío",
+			"error": "Algo salió mal"
+		},
+		"item": {
+			"from": "Partida",
+			"to": "Destino",
+			"addEvent": "Agregar evento",
+			"import": "Importación",
+			"export": "Exportación",
+			"importAbbrev": "IMP",
+			"exportAbbrev": "EXP",
+			"completeEvent": "Finalizar flete",
+			"sendReport": "Enviar Reporte",
+			"sendUpdate": "Enviar Notificación de Envio",
+			"freightBox": "Caja",
+			"national": "Nacional"
+		},
+		"detail": {
+			"arrivalDate": "Fecha de llegada",
+			"travelingTime": "Tiempo de viaje",
+			"travelingTimeDays": "Tiempo de viaje (en días)",
+			"travelingTimeHours": "Tiempo de viaje (en horas:minutos)",
+			"departureTime": "Hora de salida",
+			"departureDate": "Fecha de salida",
+			"arrivalTime": "Hora de llegada"
+		},
+		"search": {
+			"title": "Buscar envío"
+		},
+		"filter": {
+			"index": "Filtros",
+			"user": "Cliente",
+			"subclient": "Subcliente",
+			"freightBox": "Caja",
+			"departureDate": "Fecha de salida",
+			"type": "Tipo",
+			"status": "Status",
+			"traveling": "Viajando",
+			"completed": "Completado",
+			"import": "Importación",
+			"export": "Exportación",
+			"anything": "Cualquiera",
+			"trackingNumber": "Número de guía",
+			"noDate": "Sin fecha específica",
+			"specificDate": "Fecha específica",
+			"multipleDate": "Rango de fechas",
+			"clear": "Quitar filtros",
+			"national": "Nacional"
+		},
+		"ltl": {
+			"add": "Agregar LTL",
+			"index": "LTL",
+			"amount": "Cantidad",
+			"types": {
+				"cardboard": "Carton",
+				"envelope": "Sobre",
+				"bulk": "Bulto"
+			}
+		}
+	},
+	"event": {
+		"form": {
+			"type": "Tipo",
+			"arrival": "Llegada",
+			"departure": "Salida",
+			"update": "Actualización",
+			"driverUpdate": "Cambio de chofer",
+			"tagUpdate": "Cambio de sello",
+			"vehicleUpdate": "Cambio de trailer",
+			"borderArrival": "Llegada a la frontera",
+			"borderDeparture": "Salida de la frontera",
+			"mechanicalFailure": "Falla mecánica",
+			"accident": "Accidente",
+			"blockedRoad": "Carretera bloqueada",
+			"shipmentReview": "Revisión de mercancía",
+			"location": "Nombre de Ubicacion",
+			"date": "Fecha",
+			"time": "Hora",
+			"notes": "Notas",
+			"lat": "Lat.",
+			"lng": "Lng.",
+			"images": "Imagenes",
+			"eta": "ETA"
+		},
+		"edit": {
+			"title": "Evento",
+			"error": "Algo salió mal"
+		}
+	},
+	"driver": {
+		"index": {
+			"title": "Operadores",
+			"description": "Modulo de operadores",
+			"add": "Agregar",
+			"edit": "Editar",
+			"delete": "Eliminar"
+		},
+		"form": {
+			"name": "Nombre del operador",
+			"vehicle": "Número del trailer",
+			"vehicleShort": "Trailer"
+		},
+		"edit": {
+			"title": "Operador",
+			"error": "Algo salió mal"
+		}
+	},
+	"eventType": {
+		"index": {
+			"title": "Tipos de evento",
+			"description": "Módulo de tipos de evento"
+		},
+		"form": {
+			"name": "Nombre"
+		},
+		"edit": {
+			"title": "Tipo de evento",
+			"error": "Algo salió mal"
+		}
+	},
+	"document": {
+		"index": {
+			"title": "Documentos",
+			"description": "Módulo de documentos"
+		},
+		"form": {
+			"name": "Nombre",
+			"status": "Status"
+		},
+		"edit": {
+			"title": "Documento",
+			"error": "Algo salió mal"
+		}
+	},
+	"modal": {
+		"component": {
+			"accept": "Aceptar",
+			"cancel": "Cancelar",
+			"save": "Guardar",
+			"back": "Regresar",
+			"print": "Imprimir"
+		},
+		"warn": {
+			"title": "Eliminar",
+			"description": "El elemento será eliminado de forma permanente, ¿continuar?",
+			"delete": "Eliminar",
+			"cancel": "Cancelar"
+		}
+	},
+	"actions": {
+		"delete": {
+			"click": "Clic para Eliminar",
+			"doubleClick": "Doble Clic Para Eliminar"
+		},
+		"view": {
+			"click": "Clic para Expandir",
+			"doubleClick": "Doble Clic para Expandir"
+		}
+	},
+	"report": {
+		"shipment": {
+			"success": "Reporte de envio enviado exitosamente!",
+			"error": "No se pudo enviar el reporte. Seguro que tiene destinatarios registrados?",
+			"noRecipientsMultiple": "No se pudieron enviar todos los reportes. Seguro que tiene destinatarios registrados todos los envios?",
+			"noRecipients": "No se pudo enviar el reporte. Seguro que tiene destinatarios registrados?"
+		}
+	},
+	"toast": {
+		"index": {
+			"success": "La operación se realizó con éxito"
+		}
+	},
+	"chat": {
+		"message": {
+			"form": {
+				"write": "Escribir mensaje"
+			}
+		},
+		"list": {
+			"title": "Chat"
+		}
+	},
+	"product": {
+		"index": {
+			"title": "Productos",
+			"description": "Módulo de productos",
+			"add": "Agregar",
+			"edit": "Editar",
+			"delete": "Eliminar",
+			"all": "Todos"
+		},
+		"form": {
+			"name": "Nombre de Producto",
+			"code": "Codigo de Producto",
+			"unit": "Unidad",
+			"price": "Precio",
+			"priceUnit": "Precio / {{unit}}",
+			"initialInventory": "Inventario Inicial",
+			"inventory": "Cantidad en Inventario",
+			"inventoryOriginal": "Cantidad en Inventario Original",
+			"amount": "Cantidad",
+			"category": "Categoria"
+		},
+		"edit": {
+			"title": "Producto",
+			"error": "Algo salió mal"
+		}
+	},
+	"sale": {
+		"index": {
+			"title": "Ventas",
+			"sale":"Venta",
+			"mySales": "Mis Ventas",
+			"createSale": "Realizar Venta",
+			"description": "Modulo de Ventas",
+			"salePayment":"Pago",
+			"add": "Agregar",
+			"edit": "Editar",
+			"delete": "Eliminar",
+			"all": "Todos",
+			"print":"Imprimir Recibo"
+		},
+		"form": {
+			"employee": "Empleado",
+			"total": "Total",
+			"subtotal": "Subtotal",
+			"iva": "IVA",
+			"change": "Cambio",
+			"amountPaid" : "Cantidad Pagada"
+		},
+		"edit": {
+			"title": "Venta",
+			"error": "Something went wrong"
+		}
+	}
+}

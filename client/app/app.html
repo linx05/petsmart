@@ -1,4 +1,17 @@
-<!-- Place all UI elements intended to be present across all routes in this file -->
-<div class="app">
-  <div ui-view></div>
+<div layout="row" flex id="hideOnPrint">
+
+	<app-sidebar ng-if="$ctrl.isLogged"
+	             on-logout="$ctrl.logout()"
+	             states="$ctrl.states"
+	             user="$ctrl.user">
+	</app-sidebar>
+
+	<div layout="column" flex>
+		<app-header ng-if="$ctrl.isLogged"></app-header>
+
+		<md-content id="app-content" layout="column" flex>
+			<div ui-view></div>
+		</md-content>
+	</div>
+
 </div>

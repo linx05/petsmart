@@ -1,7 +1,11 @@
-.DS_Store
-.tmp
 .git
+.idea
 node_modules
-.settings
-*.log
-dist/
+npm-debug.log
+.env
+dist
+client/config.json
+server/uploads
+npm-debug.log*
+*.pdf
+client/app/app.config.js

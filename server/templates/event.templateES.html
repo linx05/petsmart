@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Nuevo Evento de Envio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="css/shipment.css" type="text/css"/>
+	<link rel="stylesheet" href="css/bulma.css" type="text/css"/>
+</head>
+<body>
+<div class="container is-fluid" style="background-color: white !important;">
+	<div class="page">
+		<!--<div class="columns is-mobile">-->
+		<!--<div class="column is-one-third">-->
+		<!--<figure class="image is-brand">-->
+		<!--<img src="assets/img/logo-full.png" alt="Unidos Transport">-->
+		<!--</figure>-->
+		<!--</div>-->
+		<!--<div class="column is-offset-one-third is-one-third">-->
+		<!--<figure class="image">-->
+		<!--&lt;!&ndash;<img src="assets/img/name.png" class="is-pulled-right" alt="Client Logo">&ndash;&gt;-->
+		<!--</figure>-->
+		<!--</div>-->
+		<!--</div>-->
+		<div class="box">
+			<div class="columns is-mobile">
+				<div class="column">
+					<div class="columns is-mobile">
+						<div class="columns is-mobile">
+							<div class="column">
+								<h1 class="title">Nuevo Evento de Envio</h1>
+								<h2 class="subtitle">Un nuevo evento ha sido agregado a su viaje</h2>
+							</div>
+						</div>
+					</div>
+					<div class="columns is-mobile">
+						<div class="column">
+							<label class="label">Tipo de Evento</label>
+							<h2 class="subtitle"><%= model.lastEvent.type.name %></h2>
+						</div>
+						<div class="column">
+							<label class="label">Fecha del Evento</label>
+							<h2 class="subtitle"><%= model.lastEvent.date.toLocaleString() %></h2>
+						</div>
+					</div>
+					<!--<div class="columns is-mobile">-->
+						<!--<div class="column">-->
+							<!--<label class="label">Hora de Evento</label>-->
+							<!--<h2 class="subtitle"><%= model.lastEvent.date.toLocaleTimeString() %></h2>-->
+						<!--</div>-->
+						<!--<div class="column">-->
+							<!--<label class="label">Fecha de Evento</label>-->
+							<!--<h2 class="subtitle"><%= model.lastEvent.date.toDateString() %></h2>-->
+						<!--</div>-->
+					<!--</div>-->
+					<% if(typeof model.lastEvent.location.name !== 'undefined') { %>
+					<div class="columns is-mobile">
+						<div class="column">
+							<label class="label">Ubicación</label>
+							<h2 class="subtitle"><%= model.LastEvent.location.name %></h2>
+						</div>
+					</div>
+					<% } %>
+					<% if(typeof model.lastEvent.notes !== 'undefined') { %>
+					<div class="columns is-mobile">
+						<div class="column">
+							<label class="label">Notes</label>
+							<h2 class="subtitle"><%= model.LastEvent.notes %></h2>
+						</div>
+					</div>
+					<% } %>
+				</div>
+			</div>
+			<div class="columns is-mobile">
+				<div class="column is-12">
+					<a href="shipmentLink" class="button is-info is-fullwidth">View Shipment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

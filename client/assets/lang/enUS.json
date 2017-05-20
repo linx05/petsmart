@@ -1,0 +1,548 @@
+{
+	"global": {
+		"menu": {
+			"menus": "Menus",
+			"logout": "Logout",
+			"home": "Home",
+			"accounts": "Accounts",
+			"clients": "Clients",
+			"settings": "Settings",
+			"drivers": "Drivers",
+			"products": "Products",
+			"movements": "Inventory Movements",
+			"entry": "Inventory Entries",
+			"output": "Transfer Branch",
+			"sales": "Sales"
+		},
+		"action": {
+			"add": "Add",
+			"cancel": "Cancel",
+			"details": "Details",
+			"edit": "Edit",
+			"save": "Save",
+			"search": "Search",
+			"send": "Send",
+			"remove": "Remove",
+			"upload": {
+				"started": "Uploading...",
+				"finished": "File Uploaded!"
+			},
+			"back": "Go Back",
+			"saveAndNew": "Save and new",
+			"copy": "Copy",
+			"update": "Update"
+		},
+		"state": {
+			"traveling": "Traveling"
+		},
+		"error": {
+			"arrived": "Shipment has already arrived",
+			"departed": "Shipment has already departed",
+			"unique": "The ${field} must be unique, it is already in use",
+			"required": "The ${field} is required",
+			"unauthorized": "Unauthorized",
+			"unknown": "Something went wrong"
+		},
+		"info": {
+			"attachments": "Attachments / Images",
+			"seconds": "S"
+		}
+	},
+	"login": {
+		"index": {
+			"title": "Unidos Transport",
+			"error": "Email or Password are incorrect."
+		},
+		"form": {
+			"login": "Login",
+			"name": "Email",
+			"password": "Password",
+			"reset": "Forgot password?",
+			"back": "Back"
+		}
+	},
+	"reset": {
+		"index": {
+			"title": "Unidos Transport",
+			"error": "Email is incorrect.",
+			"correct": "Email sent",
+			"resetcorrect": "Password changed",
+			"errortoken": "Your token expired, please request another one.",
+			"errorpass": "Invalid passwords."
+		},
+		"form": {
+			"name": "Email",
+			"restore": "Reset password",
+			"newpasword": "New password"
+		}
+	},
+	"account": {
+		"index": {
+			"title": "Accounts",
+			"description": "Accounts module",
+			"add": "Add",
+			"adminPlural": "SysAdmins",
+			"employeePlural": "Employees",
+			"userPlural": "Customer Admins",
+			"clientTrackerPlural": "Customer employees",
+			"edit": "Edit",
+			"delete": "Delete"
+		},
+		"form": {
+			"name": "Name",
+			"email": "Email",
+			"level": "Level",
+			"active": "Active",
+			"admin": "SysAdmin",
+			"employee": "Employee",
+			"user": "Customer Admin",
+			"clientTracker": "Customer employee",
+			"phone": "Phone",
+			"rfc": "RFC",
+			"password": "Password",
+			"language": "Language",
+			"english": "English",
+			"spanish": "Spanish",
+			"emailNotifications": "Email notifications",
+			"company": "Company"
+		},
+		"edit": {
+			"title": "Account",
+			"error": "Something went wrong"
+		}
+	},
+	"client": {
+		"index": {
+			"title": "Clients",
+			"description": "Clients module",
+			"add": "Add",
+			"edit": "Edit",
+			"delete": "Delete"
+		},
+		"form": {
+			"administrator": "Administration Account for the Client",
+			"name": "Name",
+			"email": "Email",
+			"level": "Level",
+			"active": "Active",
+			"admin": "Admin",
+			"employee": "Employee",
+			"user": "Customer",
+			"phone": "Phone",
+			"rfc": "RFC",
+			"password": "Password",
+			"language": "Language",
+			"english": "English",
+			"spanish": "Spanish",
+			"emailNotifications": "Email notifications",
+			"subclients": "Subclients"
+		},
+		"edit": {
+			"title": "Client",
+			"error": "Something went wrong"
+		}
+	},
+	"freight": {
+		"index": {
+			"title": "Trailer",
+			"description": "Trailers module",
+			"add": "Add",
+			"unavailablePlural": "Unavailable",
+			"availablePlural": "Available",
+			"travelingPlural": "Traveling",
+			"garagePlural": "Garage",
+			"edit": "Edit",
+			"delete": "Delete"
+		},
+		"form": {
+			"id": "Trailer number",
+			"owner": "Owner",
+			"stage": "Stage",
+			"active": "Active",
+			"unavailable": "Unavailable",
+			"available": "Available",
+			"traveling": "Traveling",
+			"garage": "Garage"
+		},
+		"edit": {
+			"title": "Trailer",
+			"error": "Something went wrong"
+		},
+		"item": {
+			"active": "Active",
+			"unavailable": "Unavailable",
+			"available": "Available",
+			"traveling": "Traveling",
+			"garage": "Garage"
+		}
+	},
+	"warehouse": {
+		"index": {
+			"title": "Places",
+			"description": "Places module",
+			"add": "Add",
+			"edit": "Edit",
+			"delete": "Delete"
+		},
+		"form": {
+			"location": "Point Name",
+			"notes": "Notes",
+			"lat": "Lat.",
+			"lng": "Lng.",
+			"level": "Level",
+			"active": "Active",
+			"admin": "Admin",
+			"employee": "Employee",
+			"user": "User"
+		},
+		"edit": {
+			"title": "Place",
+			"error": "Something went wrong"
+		}
+	},
+	"shipment": {
+		"index": {
+			"title": "Shipments",
+			"description": "Shipments module",
+			"add": "Add",
+			"traveling": "Traveling",
+			"completed": "Completed",
+			"notFound": "Not found",
+			"noShipments": "No Shipments",
+			"viewMode": "View mode",
+			"gridView": "Grid view",
+			"tableView": "Table view",
+			"todayShipments": "Today's Completed Shipments"
+		},
+		"form": {
+			"user": "Customer",
+			"freightBox": "Trailer",
+			"from": "From",
+			"date": "Date",
+			"to": "To",
+			"tags": "Tags",
+			"mainTag": "Main tag",
+			"notes": "Notes",
+			"driver": "Driver's name",
+			"vehicle": "Vehicle ID",
+			"time": "Time",
+			"type": "Type",
+			"trackingNumber": "Tracking numbers",
+			"import": "Import",
+			"export": "Export",
+			"freightBoxInUseMessage": "The selected trailer is associated with another shipment",
+			"subscribers": "Subscribers",
+			"drivers": "Drivers",
+			"vehicles": "Vehicles",
+			"freightBoxes": "Trailers",
+			"subclient": "Subclient",
+			"data": "Data",
+			"transport": "Transport",
+			"documents": "Documents",
+			"lastUpdate": "Last update",
+			"noTag": "No tag",
+			"status": "Status",
+			"departureDate": "Departure date",
+			"departureTime": "Departure time",
+			"national": "National",
+			"interchange_units": "Border Vehicles",
+			"ltl": "LTL"
+		},
+		"edit": {
+			"title": "Shipment",
+			"titleAlt": "Copy shipment",
+			"error": "Something went wrong"
+		},
+		"item": {
+			"from": "From",
+			"to": "To",
+			"addEvent": "Add event",
+			"import": "Import",
+			"export": "Export",
+			"importAbbrev": "IMP",
+			"exportAbbrev": "EXP",
+			"completeEvent": "Finish trip",
+			"freightBox": "Trailer",
+			"sendReport": "Send Report",
+			"sendUpdate": "Send Shipment Notification",
+			"national": "National"
+		},
+		"detail": {
+			"arrivalDate": "Arrival Date",
+			"travelingTime": "Traveling time",
+			"travelingTimeDays": "Traveling time (in days)",
+			"travelingTimeHours": "Traveling time (in hours:minutes)",
+			"departureTime": "Departure time",
+			"departureDate": "Departure date",
+			"arrivalTime": "Arrival Time"
+		},
+		"search": {
+			"title": "Search shipment"
+		},
+		"filter": {
+			"index": "Filters",
+			"user": "Client",
+			"subclient": "Subclient",
+			"freightBox": "Trailer",
+			"departureDate": "Departure date",
+			"type": "Type",
+			"status": "Status",
+			"traveling": "Traveling",
+			"completed": "Completed",
+			"import": "Import",
+			"export": "Export",
+			"national": "National",
+			"anything": "Anything",
+			"trackingNumber": "Tracking number",
+			"noDate": "Not specific date",
+			"specificDate": "Specific date",
+			"multipleDate": "Date range",
+			"clear": "Clear filters"
+		},
+		"ltl": {
+			"add": "Agregar LTL",
+			"index": "LTL",
+			"amount": "Amount",
+			"types": {
+				"cardboard": "Cardboard",
+				"envelope": "Envelope",
+				"bulk": "Bulk"
+			}
+		}
+	},
+	"movement": {
+		"index": {
+			"title": "Inventory Movements",
+			"description": "Inventory Movements Module",
+			"add": "Add",
+			"addProduct": "Add Product",
+			"accept": "Accept Movement",
+			"cancel": "Cancel Movement",
+			"reject": "Reject Movement",
+			"reopen": "Reopen Movement",
+			"edit": "Edit",
+			"delete": "Delete"
+		},
+		"type": "Type",
+		"form": {
+			"types": {
+				"entry": "Inventory Input",
+				"output": "Inventory Transfer to Branch",
+				"correction": {
+					"entry": "",
+					"output": ""
+				}
+			},
+			"states": {
+				"pending": "Pending",
+				"rejected": "Rejected",
+				"canceled": "Canceled",
+				"accepted": "Accepted"
+			},
+			"correction_type": "Correction Of",
+			"view": "View",
+			"state": "State",
+			"type": "Movement Type",
+			"name": "Product Name",
+			"code": "Movement Code",
+			"date": "Movement Date",
+			"unit": "Unit",
+			"price": "Price",
+			"priceUnit": "Price / {{unit}}",
+			"initialInventory": "Initial Inventory",
+			"inventory": "Amount in Inventory",
+			"available": "Amount Available to Select",
+			"branch": "Branch",
+			"branch_transfer": "Branch to Transfer to",
+			"movement": "Movement",
+			"original": "Original Amount"
+		},
+		"edit": {
+			"title": "Inventory Movement",
+			"error": "Something went wrong"
+		},
+		"error": {
+			"overInventory": "You have chosen more items that are currently in inventory."
+		},
+		"code": {
+			"title": "Open Inventory Movement",
+			"error": "Something went wrong",
+			"code": "Inventory Movement Code"
+		}
+	},
+	"event": {
+		"form": {
+			"type": "Type",
+			"arrival": "Arrival",
+			"departure": "Departure",
+			"update": "Update",
+			"driverUpdate": "Change of driver",
+			"tagUpdate": "Change of tag",
+			"vehicleUpdate": "Change of vehicle",
+			"borderArrival": "Border arrival",
+			"borderDeparture": "Border departure",
+			"mechanicalFailure": "Mechanical failure",
+			"accident": "Accident",
+			"blockedRoad": "Road blocked",
+			"shipmentReview": "Review of merchandise",
+			"location": "Point Name",
+			"date": "Date",
+			"time": "Time",
+			"notes": "Notes",
+			"lat": "Lat.",
+			"lng": "Lng.",
+			"images": "Images",
+			"eta": "ETA"
+		},
+		"edit": {
+			"title": "Shipment's event",
+			"error": "Something went wrong"
+		}
+	},
+	"driver": {
+		"index": {
+			"title": "Drivers",
+			"description": "Drivers module",
+			"add": "Add",
+			"edit": "Edit",
+			"delete": "Delete"
+		},
+		"form": {
+			"name": "Driver's name",
+			"vehicle": "Vehicle ID",
+			"vehicleShort": "Vehicle"
+		},
+		"edit": {
+			"title": "Driver",
+			"error": "Something went wrong"
+		}
+	},
+	"eventType": {
+		"index": {
+			"title": "Event types",
+			"description": "Event types module"
+		},
+		"form": {
+			"name": "Name"
+		},
+		"edit": {
+			"title": "Event type",
+			"error": "Something went wrong"
+		}
+	},
+	"document": {
+		"index": {
+			"title": "Documents",
+			"description": "Documents module"
+		},
+		"form": {
+			"name": "Name",
+			"status": "Status"
+		},
+		"edit": {
+			"title": "Document",
+			"error": "Something went wrong"
+		}
+	},
+	"modal": {
+		"component": {
+			"accept": "Accept",
+			"cancel": "Cancel",
+			"save": "Save",
+			"back": "Go Back",
+			"print": "Print"
+		},
+		"warn": {
+			"title": "Delete",
+			"description": "Proceed?",
+			"delete": "Delete",
+			"cancel": "Cancel"
+		}
+	},
+	"actions": {
+		"delete": {
+			"click": "Click to Delete",
+			"doubleClick": "Double Click to Delete"
+		},
+		"view": {
+			"click": "Click to Expand",
+			"doubleClick": "Double Click to Expand"
+		}
+	},
+	"toast": {
+		"index": {
+			"success": "Operation completed successfully"
+		}
+	},
+	"report": {
+		"shipment": {
+			"success": "Shipment report sent successfully!",
+			"error": "Could not send the shipment report. Are you sure you have recipients registered?",
+			"noRecipientsMultiple": "Could not send all shipment reports. Are you sure all shipments have recipients registered?",
+			"noRecipients": "Could not send the shipment report. Are you sure you have recipients registered?"
+		}
+	},
+	"chat": {
+		"message": {
+			"form": {
+				"write": "Write message"
+			}
+		},
+		"list": {
+			"title": "Chat List"
+		}
+	},
+	"product": {
+		"index": {
+			"title": "Products",
+			"description": "Products Module",
+			"add": "Add",
+			"edit": "Edit",
+			"delete": "Delete",
+			"all": "All"
+		},
+		"form": {
+			"name": "Product Name",
+			"code": "Product Code",
+			"unit": "Unit",
+			"price": "Price",
+			"priceUnit": "Price / {{unit}}",
+			"initialInventory": "Initial Inventory",
+			"inventory": "Amount in Inventory",
+			"inventoryOriginal": "Original Amount in Inventory",
+			"amount": "Amount",
+			"category": "Category"
+		},
+		"edit": {
+			"title": "Product",
+			"error": "Something went wrong"
+		}
+	},
+	"sale": {
+		"index": {
+			"title": "Sales",
+			"sale": "Sale",
+			"salePayment":"Payment",
+			"mySales": "My Sales",
+			"createSale": "Create Sale",
+			"description": "Sales Module",
+			"add": "Add",
+			"edit": "Edit",
+			"delete": "Delete",
+			"all": "All",
+			"print":"Print Receipt"
+		},
+		"form": {
+			"employee": "Employee",
+			"total": "Total",
+			"subtotal": "Subtotal",
+			"iva": "IVA",
+			"change": "Change",
+			"amountPaid" : "Amount Paid"
+		},
+		"edit": {
+			"title": "Sale",
+			"error": "Something went wrong"
+		}
+	}
+}

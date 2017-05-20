@@ -1,0 +1,122 @@
+[
+	{
+		"full_name": "Empleado 1",
+		"email": "empleado@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 2",
+		"email": "empleado2@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado2",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 3",
+		"email": "empleado3@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado3",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 4",
+		"email": "empleado4@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado4",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 5",
+		"email": "empleado5@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado5",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 6",
+		"email": "empleado6@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado6",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 7",
+		"email": "empleado7@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado7",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 8",
+		"email": "empleado8@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado8",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 9",
+		"email": "empleado9@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado9",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Empleado 10",
+		"email": "empleado10@ejemplo.com",
+		"level": "employee",
+		"active": true,
+		"local": {
+			"username": "empleado10",
+			"password": "empleado"
+		}
+	},
+	{
+		"full_name": "Admin 1",
+		"email": "admin@ejemplo.com",
+		"level": "admin",
+		"active": true,
+		"local": {
+			"username": "admin",
+			"password": "admin"
+		}
+	},
+	{
+		"full_name": "Admin 2",
+		"email": "admin2@ejemplo.com",
+		"level": "admin",
+		"active": true,
+		"local": {
+			"username": "admin2",
+			"password": "admin"
+		}
+	}
+]

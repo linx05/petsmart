@@ -1,0 +1,36 @@
+<form name="accountForm" ng-submit="$ctrl.onSubmit();">
+	<div layout-gt-sm="row">
+		<md-input-container class="md-block" flex-gt-sm>
+			<label translate="account.form.name"></label>
+			<input type="text" name="name" ng-model="$ctrl.data.name" ng-required="true">
+		</md-input-container>
+	</div>
+
+	<div layout-gt-sm="row">
+		<md-input-container class="md-block" flex-gt-sm>
+			<label translate="account.form.email"></label>
+			<input type="email" name="email" ng-model="$ctrl.data.email" ng-required="true">
+		</md-input-container>
+	</div>
+
+	<div layout-gt-sm="row" ng-if="!$ctrl.data._id">
+		<md-input-container class="md-block" flex-gt-sm>
+			<label translate="account.form.password"></label>
+			<input type="password" name="password" ng-model="$ctrl.data.password" ng-required="$ctrl.adminMode">
+		</md-input-container>
+	</div>
+
+	<div ng-if="$ctrl.adminMode" layout-gt-sm="row">
+		<md-input-container class="md-block" flex-gt-sm>
+			<label translate="account.form.level"></label>
+			<md-select name="level" ng-model="$ctrl.data.level" ng-model-options="{ trackBy: '$value' }"
+				placeholder="{{ 'account.form.level' | translate }}" ng-required="true">
+				<md-option ng-repeat="level in $ctrl.userLevels" ng-value="level.id">
+					{{ 'account.form.' + level.id | translate }}
+				</md-option>
+			</md-select>
+		</md-input-container>
+	</div>
+
+</form>
+<i ng-init="$ctrl.setForm(accountForm)"></i>

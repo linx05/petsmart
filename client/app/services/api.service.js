@@ -27,7 +27,7 @@ export default class ApiService {
 			})
 			.catch(ctrl.requestFailed)
 			.finally(() => {
-				if (!hideLoading) ctrl.toast.hideLoading();
+				// if (!hideLoading) ctrl.toast.hideLoading();
 			});
 	}
 

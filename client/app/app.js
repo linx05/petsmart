@@ -1,8 +1,11 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import translate from 'angular-translate';
-import translateStatic from 'angular-translate-loader-static-files';
+import 'angular-translate-loader-static-files';
 import 'normalize.css';
+import 'semantic-ui-css/semantic.css';
+import 'semantic-ui-css/semantic.min';
+import semanticUi from 'semantic-ui-angular-jquery/angular-semantic-ui';
 
 import Common from './common/common';
 import Components from './components/components';
@@ -18,6 +21,7 @@ import locationConfig from './config/location.config';
 const app = angular.module('app', [
 	uiRouter,
 	translate,
+	'semantic-ui',
 	Common,
 	Components,
 	Services,

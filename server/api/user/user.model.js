@@ -21,7 +21,7 @@ const UserSchema = new Schema({
 	level: {
 		type    : String,
 		required: true,
-		enum    : ['admin', 'employee']
+		enum    : ['admin', 'user']
 	},
 
 	active: {

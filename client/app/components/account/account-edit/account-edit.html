@@ -1,0 +1,10 @@
+<account-form data="$ctrl.data"
+	event="$ctrl.event"
+	admin-mode="$ctrl.adminMode"
+	levels="$ctrl.levels"
+	companies="$ctrl.companies"
+	on-save="$ctrl.save($event)">
+</account-form>
+<div ng-repeat="error in $ctrl.errors" class="capitalize" md-colors="::{ color: 'warn' }">
+	{{ ::error }}
+</div>

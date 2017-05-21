@@ -1,6 +1,19 @@
-<div class="md-toolbar-tools" layout="row" flex>
-	<!--<md-button class="menu md-icon-button" hide-gt-sm ng-click="$ctrl.toggleSidebar()">-->
-		<!--<md-icon md-svg-icon="menu"></md-icon>-->
-	<!--</md-button>-->
-	<!--<img id="header-logo" src="../../../assets/img/logo.png" hide-gt-sm>-->
+<div class="ui top attached menu">
+	<a class="active item" ui-sref="accounts">
+		Inicio
+	</a>
+	<a class="item" ng-if="$ctrl.isAdmin" ng-click="$ctrl.goTo('pets')">
+		Mascotas
+	</a>
+	<a class="item" ng-if="$ctrl.isAdmin" ng-click="$ctrl.goTo('owners')">
+		Dueños
+	</a>
+	<div class="right menu">
+		<a class="item" ng-show="$ctrl.isAdmin" ng-click="$ctrl.goTo('accounts')">
+			Usuarios
+		</a>
+		<a class="ui item" ng-click="$ctrl.logout()">
+			Cerrar Sesión
+		</a>
+	</div>
 </div>

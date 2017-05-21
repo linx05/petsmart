@@ -1,0 +1,14 @@
+<div layout="row" layout-align="start center" layout-wrap>
+	<div flex-xs="100" flex-sm="33" flex-md="25" flex-lg="25" flex-xl="25"
+		dir-paginate="account in $ctrl.data | itemsPerPage: 24">
+		<account-item data="account"
+			admin-mode="$ctrl.adminMode"
+			on-select="$ctrl.selectItem($event)"
+			on-delete="$ctrl.deleteItem($event)">
+		</account-item>
+	</div>
+</div>
+
+<div class="pagination-controls-container" layout="row" layout-align="center start" flex>
+	<dir-pagination-controls template-url="material.paginate.html"></dir-pagination-controls>
+</div>

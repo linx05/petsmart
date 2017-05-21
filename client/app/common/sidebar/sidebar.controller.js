@@ -6,15 +6,6 @@ export default class SidebarController {
 	}
 
 	$onInit () {
-		this.menus = [
-			{name: 'global.menu.accounts', icon: 'account', state: 'accounts'},
-			{name: 'global.menu.clients', icon: 'business', state: 'clients'},
-			{name: 'global.menu.products', icon: 'products',state: 'products'},
-			{name: 'global.menu.entry', icon: 'store',      state: 'movements'},
-			{name: 'global.menu.sales', icon: 'shopping',   state: 'sales'}
-		];
-
-		this.showMenus();
 	}
 
 	$onChanges (changes) {
@@ -25,23 +16,6 @@ export default class SidebarController {
 		if (changes.states) {
 			this.states = Object.assign([], this.states);
 		}
-	}
-
-	showMenus () {
-		let states = this.states.filter((state) => {
-			if (state.data && state.data.level) {
-				return state.data.level.includes(this.user.level);
-			}
-			return false;
-		});
-
-		states = states.map(state => state.name);
-
-		this.menus = this.menus.filter(menu => states.includes(menu.state));
-	}
-
-	openSaleModal () {
-		this.state.go('sale');
 	}
 
 	toggleSidebar () {

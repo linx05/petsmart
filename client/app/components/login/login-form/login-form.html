@@ -1,21 +1,23 @@
-<form name="loginForm" ng-submit="$ctrl.onSubmit();">
-	<div layout-gt-sm="row">
-		<md-input-container class="md-block" flex-gt-sm>
+<form name="loginForm" class="ui form" ng-submit="$ctrl.onSubmit();">
+	<div class="field">
 			<label translate="login.form.name"></label>
 			<input type="text" ng-model="$ctrl.data.name">
-		</md-input-container>
 	</div>
 
-	<div layout-gt-sm="row">
-		<md-input-container class="md-block" flex-gt-sm>
+	<div class="field">
 			<label translate="login.form.password"></label>
 			<input type="password" ng-model="$ctrl.data.password">
-		</md-input-container>
 	</div>
+	<div>
 
-	<div layout="column">
-		<md-button type="submit" class="md-raised md-primary" translate="login.form.login"
-			ng-disabled="$ctrl.loading"></md-button>
-		<md-button class="md-primary" ui-sref="forgot" translate="login.form.reset"></md-button>
+		<div class="extra content">
+			<div class="ui one buttons">
+				<button type="submit" class="ui button primary"
+				        translate="login.form.login"
+				        ng-disabled="$ctrl.loading"></button>
+				<!--<button class="ui button" ui-sref="forgot" translate="login.form.reset"></button>-->
+			</div>
+		</div>
+
 	</div>
 </form>

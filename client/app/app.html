@@ -1,17 +1,21 @@
-<div layout="row" flex id="hideOnPrint">
-
-	<app-sidebar ng-if="$ctrl.isLogged"
+<div class="" id="hideOnPrint">
+	<!--<app-sidebar-->
+		<!--ng-if="$ctrl.isLogged"-->
+		<!--on-logout="$ctrl.logout()"-->
+		<!--states="$ctrl.states"-->
+		<!--user="$ctrl.user">-->
+	<!--</app-sidebar>-->
+	<app-sidebar 
 	             on-logout="$ctrl.logout()"
 	             states="$ctrl.states"
 	             user="$ctrl.user">
 	</app-sidebar>
-
-	<div layout="column" flex>
+	<div>
 		<app-header ng-if="$ctrl.isLogged"></app-header>
 
-		<md-content id="app-content" layout="column" flex>
+		<div class="ui container" id="app-content">
 			<div ui-view></div>
-		</md-content>
+		</div>
 	</div>
 
 </div>

@@ -46,6 +46,17 @@ module.exports = {
 				test  : /\.(jpg)$/,
 				loader: 'file-loader',
 			},
+			{
+				test: /\.(eot|svg|ttf|woff|woff2)$/,
+				loader: 'file-loader'
+			},
+			{
+				test: /\.svg$/,
+				loader: 'svg-sprite-loader',
+				options : {
+					extract: false
+				}
+			},
 		]
 	},
 	resolve  : {

@@ -13,8 +13,8 @@ export default function RoutesMiddleware($transitions, AuthService, HistoryServi
 
 	$transitions.onStart({}, (transition) => {
 		const state         = transition.to();
-		const levels        = _.get(state.data, 'level');
-		const requiresLogin = _.get(state.data, 'requiresLogin');
+		const levels        = state.data.level;
+		const requiresLogin = state.data.requiresLogin;
 		const params        = transition.params();
 
 		if (!transition.from().abstract) {
@@ -51,7 +51,7 @@ export default function RoutesMiddleware($transitions, AuthService, HistoryServi
 
 		function homeMiddleWare() {
 			if (state.name === 'home') {
-				return redirectToHome();
+				// return redirectToHome();
 			}
 		}
 	});
@@ -68,7 +68,7 @@ export default function RoutesMiddleware($transitions, AuthService, HistoryServi
 	});
 
 	function getHome() {
-		return auth.isLogged() ? 'sales' : 'login';
+		return auth.isLogged() ? 'home' : 'login';
 	}
 
 	function redirectToHome() {
